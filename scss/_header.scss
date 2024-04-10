@@ -41,6 +41,10 @@ header{
     flex-direction: column;
     align-items: center;
 
+    @include m.md{
+        align-items: flex-start;
+    }
+
     h1{
         margin-bottom: 50px;
     }
@@ -55,7 +59,7 @@ header{
 
         &:hover{
             background-color: v.$color-bg-link-header-href;
-            transform: translateY(-5px);
+            transform: translateX(10px);
         }
 
         @include m.md{
