@@ -1,0 +1,15 @@
+@use 'mixins' as *;
+
+.container{
+    padding: 30px;
+
+    @include md{
+        width: 760px;
+        margin: 0 auto;
+    }
+
+    @include lg{
+        width: 1160px;
+        margin: 0 auto;
+    }
+}
