@@ -1,0 +1,30 @@
+%properties{
+    display: block;
+    margin-bottom: 5px;
+    font-family: inherit;
+    width: 100%;
+}
+
+label{
+    @extend %properties;
+}
+
+input{
+    @extend %properties;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+
+    &:focus{
+        border: 1px solid gray
+    }
+
+    &[type="submit"]{
+        margin-top: 30px;
+    }
+}
+
+textarea{
+    @extend input;
+    resize: none;
+}
