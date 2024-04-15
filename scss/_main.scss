@@ -20,23 +20,3 @@ section{
         padding: 20px 0;
     }
 }
-
-.row{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
-    @include md{
-        flex-direction: row;
-    }
-}
-
-.col{
-    width: 100%;
-    
-    &-md50 {
-        padding: 20px;
-        flex: 0 0 50%;
-    }
-    
-}
