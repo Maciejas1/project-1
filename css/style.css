@@ -104,6 +104,47 @@ nav {
 }
 .menu span {
   font-size: 3rem;
+  cursor: pointer;
+}
+
+.div-menu {
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+}
+@media screen and (min-width: 1200px) {
+  .div-menu {
+    width: 20%;
+  }
+}
+.div-menu li {
+  padding: 20px;
+  text-align: center;
+}
+.div-menu .material-icons {
+  color: inherit;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.show-menu {
+  display: flex;
 }
 
 header {
@@ -305,12 +346,14 @@ input, textarea, label {
   margin-bottom: 5px;
   font-family: inherit;
   width: 100%;
+  font-size: 1.6rem;
 }
 
 input, textarea {
   padding: 10px;
   border-radius: 6px;
   border: 1px solid lightgray;
+  outline: 0;
 }
 input:focus, textarea:focus {
   border: 1px solid gray;
@@ -332,9 +375,9 @@ textarea {
 .alert-danger {
   background-color: rgba(255, 48, 48, 0.6);
 }
-.alertsuccess {
-  width: 95%;
-  margin: 0 auto;
+.alert-success {
+  width: 100%;
+  margin: 20px auto;
   text-align: center;
   padding: 16px;
   font-size: 1.6rem;
